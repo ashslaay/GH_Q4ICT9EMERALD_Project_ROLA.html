@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Length Converter!</title>
+
+	<style>
+		td, th {
+			text-align: center;
+		}
+
+		.btn {
+			background-color: #472c28;
+  			border: none;
+  			color: white;
+  			padding: 20px 50px;
+  			text-align: center;
+		}
+		.gr {
+			background-color: #fcad03;
+		}
+		body {
+
+			font-family: cursive;
+			background-image: url(https://wallpapers.com/images/hd/adorable-chocolate-covered-strawberry-desktop-babuk4p20zgtck6n.jpg);
+			font-size: 30px;
+		}
+		.box {
+		border-radius: 100px;
+		border: dashed;
+		border-color: #284736;
+		border-width: 40px;
+  		background-color: #f03e3e;
+  		padding: 40px;
+  		color: #3b2523;
+  		}
+	</style>
+</head>
+<body>
+		<center><br><br><br><br><br><div class="box"><p><br>
+		<b>Length Converter<br>
+		Millimeters to Centimeters, Meters, and Kilometers<br><br>
+		<input type="text" id="value" placeholder="Enter in Milimeters"><br>
+		<br>
+		<button type="button" class="btn btn-xl btn" onclick="cm()">Centimeters</button>
+		<button type="button" class="btn btn-xl btn" onclick="m()">Meters</button>
+		<button type="button" class="btn btn-xl btn" onclick="km()">Kilometers</button>
+		<div>Value: <p id="id1"></p></div>
+	<script>
+		function cm() {
+		var num1 = document.getElementById('value').value;
+		var num2 = 0.1;
+		var num3 = "CM";
+		var o = num1 * num2 + num3;
+		document.getElementById('id1').innerHTML = o;
+		}
+
+		function m() {
+		var num1 = document.getElementById('value').value;
+		var num2 = 0.01;
+		var num4 = "M";
+		var l = num1 * num2 + num4;
+		document.getElementById('id1').innerHTML = l;
+		}
+
+		function km() {
+		var num1 = document.getElementById('value').value;
+		var num2 = 0.001;
+		var num5 = "KM";
+		var k = num1 * num2 + num5;
+		document.getElementById('id1').innerHTML = k;
+		}
+	</script>
+	</b></p></div></center>
+ 
+</body>
+</html>
